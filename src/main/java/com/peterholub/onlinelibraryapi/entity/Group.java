@@ -1,19 +1,14 @@
 package com.peterholub.onlinelibraryapi.entity;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name ="favorites")
-public class Favorites {
+@Table(name = "group")
+public class Group {
     @Id
     private Long id;
-    @Column
-    private String userId;
-    @Column
-    private int bookId;
 
-
+    private String groupName;
 }
